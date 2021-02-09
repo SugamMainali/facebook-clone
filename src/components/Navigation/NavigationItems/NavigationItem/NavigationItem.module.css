@@ -1,0 +1,31 @@
+.NavBar {
+  /* border: 10px solid green; */
+  cursor: pointer;
+  margin: 0.75em 0;
+  display: flex;
+  justify-content: center;
+  /* display: flex; */
+  /* flex-direction: row; */
+}
+
+li[title] {
+  position: relative;
+}
+
+li[title]::after {
+  content: attr(title);
+  position: absolute;
+  top: 50px;
+  border: 2px solid var(--title-background);
+  background-color: var(--title-background);
+  font-size: 0.75em;
+  color: var(--title-disp-color);
+  padding: 0.25em 0.5em;
+  transform: scale(0);
+  border-radius: 5px;
+  transition: transform ease-out 150ms, bottom ease-out 150ms;
+}
+
+li[title]:hover:after {
+  transform: scale(1);
+}

@@ -1,25 +1,55 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import "./App.css";
+import Layout from "./Layout/Layout";
+import * as action from "./store/action/index";
+import { BrowserRouter, Route } from "react-router-dom";
+import { Redirect, Switch } from "react-router";
+import { connect } from "react-redux";
+import UserProfile from "./container/userProfile/userProfile";
+import logInedPage from "./Layout/logInedPage/logInedPage";
 
-function App() {
+function App(props) {
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    props.onValidTimeUser();
+    setTimeout(function () {
+      setLoading(false);
+    }, 2000);
+  }, []);
+  // const useId = localStorage.getItem("userId");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        {loading ? (
+          <div>loading</div>
+        ) : (
+          <Switch>
+            <Route path="/" exact component={Layout} />
+            {props.onValidatedUser ? (
+              <React.Fragment>
+                <Route path="/:id" exact component={UserProfile} />
+                <Route path="/main" exact component={logInedPage} />
+              </React.Fragment>
+            ) : (
+              <Redirect to="/" />
+            )}
+          </Switch>
+        )}
+      </div>
+    </BrowserRouter>
   );
 }
 
-export default App;
+const mapStateToProps = (state) => {
+  return {
+    onValidatedUser: state.auth.token !== null,
+  };
+};
+const mapDispatchToProps = (disptach) => {
+  return {
+    onValidTimeUser: () => disptach(action.authTokenValidation()),
+    // onUserDetailCall: () => disptach(action.userDetailCall()),
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);

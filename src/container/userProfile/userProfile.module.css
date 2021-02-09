@@ -1,0 +1,14 @@
+.profileSet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+}
+
+.profilePic {
+  border: 2px solid red;
+  width: 150px;
+  overflow: hidden;
+  height: 150px;
+  border-radius: 100px;
+}

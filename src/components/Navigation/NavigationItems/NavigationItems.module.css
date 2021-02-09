@@ -1,0 +1,160 @@
+.Ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border: 2px solid orangered;
+}
+
+.container {
+  width: 100%;
+  position: sticky;
+  box-sizing: border-box;
+  background-color: var(--background-navBar);
+  height: var(--nav-height);
+}
+
+.left {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  left: 0;
+}
+.reactIcons {
+  width: 250px;
+}
+
+.middle {
+  width: 50%;
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.middle .middleValues {
+  width: 148px;
+  cursor: pointer;
+  /* background-color: red; */
+  border: 2px solid yellow;
+}
+
+.middle .middleValues:hover {
+  width: 148px;
+  background-color: #f2f2f2;
+  /* border: 2px solid yellow; */
+}
+
+/* .middle .middleValues:active,
+.middle .middleValues.active {
+  width: 148px;
+  border-bottom: 3px solid blue;
+} */
+
+.search {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+  /* bottom: 0; */
+  /* background-color: red; */
+  border: 3px solid red;
+  /* left: 5px; */
+}
+
+.searchSign {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+}
+
+.searchInput {
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  border: none;
+  background-color: #f2f2f2;
+  border-radius: 100px;
+}
+
+.searchInput:focus {
+  outline: none;
+}
+.searchInput::placeholder {
+  display: none;
+}
+
+@media (min-width: 1260px) {
+  .search {
+    display: flex;
+    position: relative;
+    top: 10px;
+    left: 10px;
+  }
+
+  .searchSign {
+    position: absolute;
+    top: 10px;
+    left: 12px;
+  }
+
+  .searchInput {
+    margin: 0.25em;
+    padding: 1.25em;
+    width: 235px;
+    height: 40px;
+    border: none;
+    background-color: #f2f2f2;
+    border-radius: 100px;
+  }
+
+  .searchInput:focus {
+    outline: none;
+  }
+  .searchInput::placeholder {
+    padding: 20px;
+  }
+}
+/* .RightContainer {
+  position: relative;
+} */
+.Right {
+  display: flex;
+  position: absolute;
+  top: 1.5px;
+  right: 0px;
+  margin: 0.025rem;
+  padding: 0.25rem;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 200px;
+}
+
+.Right .rightValues {
+  width: 40px;
+  position: relative;
+  height: 40px;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  background-color: #f2f2f2;
+}
+
+.rightValues:hover {
+  cursor: pointer;
+  background-color: #808080;
+}
+
+/* .middleValues[title] {
+  position: relative;
+}
+
+.middleValues[title]::after {
+  content: attr(title);
+} */

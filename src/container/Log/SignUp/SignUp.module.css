@@ -1,0 +1,40 @@
+.continer {
+  width: 100%;
+  height: 100%;
+}
+
+/* Top section */
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5em 1em;
+}
+
+.topLeft {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-weight: 650;
+  font-size: 2rem;
+}
+
+.disp {
+  font-size: 0.75rem;
+}
+.topRight {
+}
+
+/* Form Section */
+.FormFill {
+  display: flex;
+}
+.Form {
+  display: flex;
+  flex-direction: column;
+}
+
+.InputAll {
+}

@@ -1,13 +1,39 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --user-name: #1c1e21;
+  --logo-fb: #1877f6;
+  --background-body: #f2f2f2;
+  --background-navBar: white;
+  --background-dark-mode-body: #1c1c1c;
+  --bacground-dark-mode-navBar: #373737;
+  --dark-mode-user-name: #dadde1;
+  --placeholder: grey;
+  --button-log-In: #1877f6;
+  --button-create-acc: #42b72a;
+  --nav-height: 56px;
+  --model-height: 1165px;
+  --model-width: 1165px;
+  --title-dark-mode-background: rgba(255, 255, 255, 0.842);
+  --title-dark-mode-disp-color: black;
+  --title-background: rgba(0, 0, 0, 0.842);
+  --title-disp-color: white;
 }
