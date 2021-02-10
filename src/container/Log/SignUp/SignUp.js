@@ -64,25 +64,6 @@ class SignUp extends Component {
         valid: false,
         touched: false,
       },
-      Gender: {
-        elementType: "radio",
-        elementConfig: {
-          type: "radio",
-          name: "gender",
-          genderval: [
-            {
-              type: "male",
-            },
-            { type: "female" },
-          ],
-        },
-        value: "",
-        validation: {
-          isRequired: true,
-        },
-        valid: false,
-        touched: false,
-      },
       Dob: {
         elementType: "select",
         elementConfig: {
@@ -206,6 +187,28 @@ class SignUp extends Component {
         valueMont: "",
         valueYear: "",
       },
+      Gender: {
+        elementType: "radio",
+        elementConfig: {
+          type: "radio",
+          name: "gender",
+          genderval: [
+            {
+              type: "Female",
+            },
+            { type: "Male" },
+            {
+              type: "Custom",
+            },
+          ],
+        },
+        value: "",
+        validation: {
+          isRequired: true,
+        },
+        valid: false,
+        touched: false,
+      },
     },
   };
 
@@ -304,6 +307,7 @@ class SignUp extends Component {
               return (
                 <div className={classes.InputAll}>
                   <Input
+                    classNameSelf={classes.signUp}
                     key={val.id}
                     validity={val.ctr.valid}
                     touched={val.ctr.touched}
@@ -323,7 +327,9 @@ class SignUp extends Component {
               Cookie Policy. You may receive SMS notifications from us and can
               opt out at any time.
             </div>
-            <button>SUBMIT</button>
+            <button className={classes.SingUp} type="submit">
+              Sign Up
+            </button>
           </form>
         </div>
       </div>

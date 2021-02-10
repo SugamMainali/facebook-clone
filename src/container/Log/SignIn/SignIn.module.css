@@ -5,6 +5,23 @@
   /* border: 10px solid red; */
 }
 
+.signIn {
+  border: 1px solid gray;
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+  margin: 0.25em;
+  border-radius: 5px;
+  position: relative;
+  top: 1px;
+  left: -5px;
+}
+
+.signIn:focus {
+  outline: none;
+  box-shadow: 0.2px 0.3px 0.5px 0.2px var(--button-log-In);
+  border: 1px solid var(--button-log-In);
+}
 .containerAll {
   width: 100%;
   /* margin: 0 auto; */
@@ -88,14 +105,16 @@
   height: 350px;
   margin: 10px;
   background-color: var(--button-log-In);
-  /* border: yellow 3px solid; */
+  border: 1px solid var(--button-log-In);
   border-radius: 5px;
   color: white;
   font-size: 1.25rem;
   font-weight: bold;
 }
-.creatAccount {
-  cursor: pointer;
+
+.logIn:hover {
+  background-color: var(--button-log-In-hover);
+  border: 1px solid var(--button-log-In-hover);
 }
 
 .ancher {
@@ -117,6 +136,8 @@
 
 .creatAccount {
   width: 55%;
+  cursor: pointer;
+  border: 1px solid var(--button-create-acc);
   height: 65%;
   position: relative;
   left: 80px;
@@ -128,7 +149,10 @@
   background-color: var(--button-create-acc);
   top: 5px;
 }
-
+.creatAccount:hover {
+  background: var(--button-create-acc-hover);
+  border: 1px solid var(--button-create-acc-hover);
+}
 .foot {
   position: relative;
   top: 25px;

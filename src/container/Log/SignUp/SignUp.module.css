@@ -30,6 +30,7 @@
 /* Form Section */
 .FormFill {
   display: flex;
+  margin: 0 0.75em;
 }
 .Form {
   display: flex;
@@ -37,4 +38,64 @@
 }
 
 .InputAll {
+  /* display: grid; */
+  /* place-items: ceter; */
+  margin-top: 0.6em;
+  /* border: green 2px solid; */
+  overflow: hidden;
+  padding: 0 0.25em;
+
+  /* grid-template-columns: repeat(2, 100px); */
+  /* grid-template-rows: repeat(3, 100px); */
+}
+
+.signUp {
+  /* display: block; */
+  border-radius: 5px;
+  background: var(--background-body);
+  width: 100%;
+  height: 40px;
+  border: 1px solid grey;
+  /* color: red; */
+}
+
+.signUp::placeholder {
+  color: grey;
+  padding: 0 10px;
+  font-weight: 500;
+}
+
+.Para {
+  font-size: 0.72rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.SingUp {
+  border: none;
+  background: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  margin: 15px 0;
+}
+
+.SingUp::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: -7px;
+  right: 50%;
+  transform: translateX(50%);
+  width: 50%;
+  /* vertical-align: middle; */
+  border-radius: 6px;
+  z-index: -10;
+  /* font-weight: bold; */
+  /* padding: 0.5em 0.7em; */
+  /* width: 100%; */
+  /* color: white; */
+  /* width: 100px; */
+  height: 36px;
+  background-color: var(--button-create-acc);
 }

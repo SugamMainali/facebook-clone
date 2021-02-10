@@ -27,8 +27,10 @@ code {
   --bacground-dark-mode-navBar: #373737;
   --dark-mode-user-name: #dadde1;
   --placeholder: grey;
-  --button-log-In: #1877f6;
-  --button-create-acc: #42b72a;
+  --button-log-In: rgb(24, 119, 246);
+  --button-log-In-hover: rgb(0, 110, 255);
+  --button-create-acc: rgb(66, 183, 42);
+  --button-create-acc-hover: rgb(61, 124, 50);
   --nav-height: 56px;
   --model-height: 1165px;
   --model-width: 1165px;

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import AccountDownVal from "../../../components/AccountDownVal/AccountDownVal";
+import AccountDownVal from "../../AccountAll/AccountDownVal/AccountDownVal";
 import Navigation from "./NavigationItem/NavigationItem";
 import MainLogo from "../../Logo/mainLogo";
 import classes from "./NavigationItems.module.css";
@@ -90,7 +90,7 @@ const NavigationItems = (props) => {
           <IconContext.Provider value={{ color: "black", size: "1.5em" }}>
             <div className={classes.Right}>
               <div className={classes.rightValues}>
-                <Navigation to={"/" + useId}>PROFILE</Navigation>
+                <Navigation to={"/user/" + useId}>PROFILE</Navigation>
               </div>
               <div className={classes.rightValues}>
                 <IoMdAdd />

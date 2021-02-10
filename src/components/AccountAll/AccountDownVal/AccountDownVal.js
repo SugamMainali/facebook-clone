@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import NavigationItem from "../Navigation/NavigationItems/NavigationItem/NavigationItem";
+import NavigationItem from "../../Navigation/NavigationItems/NavigationItem/NavigationItem";
 import { connect } from "react-redux";
-import * as action from "../../store/action/index";
+import * as action from "../../../store/action/index";
 import { Redirect } from "react-router-dom";
 
 const AccountDownVal = (props) => {
@@ -11,9 +11,11 @@ const AccountDownVal = (props) => {
     // <Redirect to="/" />
     props.history.push("/");
   };
+
+  const useId = localStorage.getItem("userId");
   return (
     <div>
-      <NavigationItem>Profile</NavigationItem>
+      <NavigationItem to={"/user/" + useId}>Profile</NavigationItem>
       <hr></hr>
       <div>Give Feedback</div>
       <hr></hr>

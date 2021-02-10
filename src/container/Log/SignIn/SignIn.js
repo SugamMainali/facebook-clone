@@ -120,6 +120,7 @@ class SignIn extends Component {
                         {singInDetails.map((val) => {
                           return (
                             <Input
+                              classNameSelfIn={classes.signIn}
                               key={val.id}
                               validity={val.ctr.valid}
                               touched={val.ctr.touched}

@@ -6,7 +6,7 @@
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.705);
   border-radius: 8px;
   position: absolute;
-  height: calc(var(--model-height) - 700px);
+  height: calc(var(--model-height) - 670px);
   width: calc(var(--model-width) - 750px);
   left: 40%;
   top: 20%;

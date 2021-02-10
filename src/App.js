@@ -27,8 +27,8 @@ function App(props) {
             <Route path="/" exact component={Layout} />
             {props.onValidatedUser ? (
               <React.Fragment>
-                <Route path="/:id" exact component={UserProfile} />
                 <Route path="/main" exact component={logInedPage} />
+                <Route path="/user/:id" exact component={UserProfile} />
               </React.Fragment>
             ) : (
               <Redirect to="/" />

@@ -8,7 +8,7 @@ export class AccountModal extends Component {
         <div
           className={classes.AccountModal}
           style={{
-            trasnform: this.props.show ? "traslateY(0)" : "translateY(-100vh)",
+            transform: this.props.show ? "traslateY(0)" : "translateY(-100vh)",
             opacity: this.props.show ? "1" : "0",
             display: this.props.show ? "block" : "none",
           }}
