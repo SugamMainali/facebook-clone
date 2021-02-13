@@ -1,0 +1,22 @@
+.contaier {
+  width: 50vw;
+  height: 50vh;
+
+  display: inline-block;
+  position: relative;
+}
+
+.image {
+  width: 50vw;
+  height: 50vh;
+}
+
+.butto {
+  position: absolute;
+  font-size: 1rem;
+  padding: 0.25em 0.5em;
+  width: 150px;
+  right: 20px;
+  bottom: 50px;
+  background-color: red;
+}

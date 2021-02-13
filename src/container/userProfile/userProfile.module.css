@@ -1,14 +1,45 @@
 .profileSet {
   display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
   justify-content: center;
+  position: relative;
   align-items: center;
   border: 2px solid black;
 }
-
-.profilePic {
-  border: 2px solid red;
+.holder {
   width: 150px;
+  height: 150px;
+  position: relative;
+  cursor: pointer;
+  border: 2px solid green;
+}
+.profilePic {
+  border: 5px solid white;
+  width: 150px;
+  object-fit: fill;
   overflow: hidden;
   height: 150px;
   border-radius: 100px;
+}
+
+.Camera {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  right: 0;
+  top: 100px;
+  width: 35px;
+  cursor: pointer;
+  height: 35px;
+  background-color: red;
+  border-radius: 25px;
+  /* z-index: 500; */
+}
+
+.cameraClickedBox {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
 }

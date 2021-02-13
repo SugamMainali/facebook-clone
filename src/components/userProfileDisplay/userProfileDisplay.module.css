@@ -1,0 +1,23 @@
+.Container {
+  width: 100%;
+  height: 75vh;
+  /* display: inline; */
+  position: relative;
+  /* z-index: ; */
+  background: var(--userProfileDisplay-background);
+  border: 5px solid red;
+}
+
+.coverPhoto {
+  display: flex;
+  justify-content: center;
+}
+
+.profile {
+  /* width: 100%;
+  height: 100%; */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: -140px;
+}

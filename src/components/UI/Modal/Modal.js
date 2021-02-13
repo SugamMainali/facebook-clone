@@ -7,7 +7,12 @@ export class Modal extends Component {
   render() {
     return (
       <React.Fragment>
-        {this.props.show ? <Backdrop cancelVal={this.props.cancelVal} /> : null}
+        {this.props.show ? (
+          <Backdrop
+            BackdropDesing={classes.Backdrop}
+            cancelVal={this.props.cancelVal}
+          />
+        ) : null}
         <div
           className={classes.modal}
           style={{

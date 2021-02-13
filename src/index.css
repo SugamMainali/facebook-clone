@@ -38,4 +38,16 @@ code {
   --title-dark-mode-disp-color: black;
   --title-background: rgba(0, 0, 0, 0.842);
   --title-disp-color: white;
+  --userProfileDisplay-background: linear-gradient(
+    180deg,
+    rgba(173, 173, 173, 1) 0%,
+    rgba(255, 255, 255, 1) 54%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  --userProfileDisplay-dark-mode-background: linear-gradient(
+    180deg,
+    rgba(250, 250, 250, 1) 0%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(77, 77, 77, 1) 100%
+  );
 }

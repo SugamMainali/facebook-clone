@@ -1,6 +1,7 @@
 .container {
   width: 100%;
-  position: sticky;
+  z-index: 900;
+  position: fixed;
   box-sizing: border-box;
   background-color: var(--background-navBar);
   height: var(--nav-height);

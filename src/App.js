@@ -5,8 +5,8 @@ import * as action from "./store/action/index";
 import { BrowserRouter, Route } from "react-router-dom";
 import { Redirect, Switch } from "react-router";
 import { connect } from "react-redux";
-import UserProfile from "./container/userProfile/userProfile";
 import logInedPage from "./Layout/logInedPage/logInedPage";
+import userProfilePage from "./components/userProfilePage/userProfilePage";
 
 function App(props) {
   const [loading, setLoading] = useState(true);
@@ -28,7 +28,7 @@ function App(props) {
             {props.onValidatedUser ? (
               <React.Fragment>
                 <Route path="/main" exact component={logInedPage} />
-                <Route path="/user/:id" exact component={UserProfile} />
+                <Route path="/user/:id" exact component={userProfilePage} />
               </React.Fragment>
             ) : (
               <Redirect to="/" />

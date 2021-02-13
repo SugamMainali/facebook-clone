@@ -1,0 +1,6 @@
+.profileModal {
+  background: red;
+  width: 100px;
+  z-index: 700;
+  height: 100px;
+}

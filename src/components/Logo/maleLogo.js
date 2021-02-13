@@ -4,7 +4,14 @@ import classes from "./Logo.module.css";
 
 const maleLogo = (props) => (
   <div className={classes.LogoProfile}>
-    <img src={maleLog} alt="Male Profile" width="150px" />
+    <img
+      src={maleLog}
+      alt="Male Profile"
+      style={{
+        width: "100%",
+        height: "100%",
+      }}
+    />
   </div>
 );
 
